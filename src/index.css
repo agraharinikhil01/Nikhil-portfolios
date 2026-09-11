@@ -1,0 +1,240 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #f8fafc;
+    color: #0f172a;
+    overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  html.dark body {
+    background-color: #080d1a;
+    color: #f1f5f9;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Space Grotesk", sans-serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* Background Subtle Dot Pattern */
+.bg-mesh-pattern {
+  background-image: radial-gradient(rgba(147, 51, 234, 0.09) 1.5px, transparent 1.5px);
+  background-size: 28px 28px;
+}
+
+html.dark .bg-mesh-pattern {
+  background-image: radial-gradient(rgba(168, 85, 247, 0.14) 1.5px, transparent 1.5px);
+}
+
+/* Dark Mode Overrides for Core Sections */
+html.dark section#home {
+  background-color: #080d1a;
+}
+
+html.dark section#home h1,
+html.dark section#about h2,
+html.dark section#skills h2,
+html.dark section#projects h2,
+html.dark section#certifications h2,
+html.dark section#contact h2 {
+  color: #f8fafc;
+}
+
+html.dark section#home p,
+html.dark section#about p,
+html.dark section#skills p,
+html.dark section#projects p,
+html.dark section#certifications p,
+html.dark section#contact p {
+  color: #94a3b8;
+}
+
+html.dark section#about {
+  background-color: #0c1427;
+  border-color: #1e293b;
+}
+
+html.dark section#about .bg-white {
+  background-color: #111c35 !important;
+  border-color: #1e2d4d !important;
+}
+
+html.dark section#about h3,
+html.dark section#about .text-slate-800,
+html.dark section#about .text-slate-900 {
+  color: #f8fafc !important;
+}
+
+html.dark section#about .text-slate-600 {
+  color: #94a3b8 !important;
+}
+
+html.dark section#about .bg-slate-50 {
+  background-color: #0d172c !important;
+  border-color: #1e2d4d !important;
+}
+
+html.dark section#skills {
+  background-color: #080d1a;
+  border-color: #1e293b;
+}
+
+html.dark section#skills .bg-white {
+  background-color: #111c35 !important;
+  border-color: #1e2d4d !important;
+}
+
+html.dark section#skills h3,
+html.dark section#skills .text-slate-950,
+html.dark section#skills .text-slate-900,
+html.dark section#skills .text-slate-800 {
+  color: #f8fafc !important;
+}
+
+html.dark section#skills .text-slate-600 {
+  color: #94a3b8 !important;
+}
+
+html.dark section#skills .bg-slate-100 {
+  background-color: #1a2744 !important;
+}
+
+html.dark section#projects {
+  background-color: #0c1427;
+  border-color: #1e293b;
+}
+
+html.dark section#projects .bg-white {
+  background-color: #111c35 !important;
+  border-color: #1e2d4d !important;
+}
+
+html.dark section#projects .bg-slate-100\/70 {
+  background-color: #0d172c !important;
+  border-color: #1e2d4d !important;
+}
+
+html.dark section#projects h3,
+html.dark section#projects .text-slate-900 {
+  color: #f8fafc !important;
+}
+
+html.dark section#projects .text-slate-600 {
+  color: #94a3b8 !important;
+}
+
+html.dark section#projects .bg-slate-50 {
+  background-color: #1a2744 !important;
+  border-color: #27385e !important;
+  color: #cbd5e1 !important;
+}
+
+html.dark section#certifications {
+  background-color: #080d1a;
+}
+
+html.dark section#certifications .flip-card-front {
+  background-color: #111c35 !important;
+  border-color: #1e2d4d !important;
+}
+
+html.dark section#certifications .flip-card-front h3 {
+  color: #f8fafc !important;
+}
+
+html.dark section#contact {
+  background-color: #0c1427;
+  border-color: #1e293b;
+}
+
+html.dark section#contact .bg-white {
+  background-color: #111c35 !important;
+  border-color: #1e2d4d !important;
+}
+
+html.dark section#contact .bg-slate-50 {
+  background-color: #0d172c !important;
+  border-color: #1e2d4d !important;
+  color: #f8fafc !important;
+}
+
+html.dark section#contact input,
+html.dark section#contact textarea {
+  background-color: #0d172c !important;
+  border-color: #1e2d4d !important;
+  color: #f8fafc !important;
+}
+
+html.dark section#contact input:focus,
+html.dark section#contact textarea:focus {
+  background-color: #111c35 !important;
+  border-color: #8b5cf6 !important;
+}
+
+html.dark section#contact h4,
+html.dark section#contact label {
+  color: #e2e8f0 !important;
+}
+
+/* 3D Flip Card Transition */
+.flip-card {
+  perspective: 1200px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 1.5rem;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0c1017;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
