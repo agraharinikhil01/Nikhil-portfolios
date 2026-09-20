@@ -23,8 +23,12 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
     const root = document.documentElement
     if (theme === "dark") {
       root.classList.add("dark")
+      root.setAttribute("data-theme", "dark")
+      document.body.classList.add("dark")
     } else {
       root.classList.remove("dark")
+      root.setAttribute("data-theme", "light")
+      document.body.classList.remove("dark")
     }
     localStorage.setItem("portfolio_theme", theme)
   }, [theme])
