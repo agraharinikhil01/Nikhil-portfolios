@@ -113,7 +113,7 @@ export function generateResumePdf() {
   doc.setFont("helvetica", "normal")
   doc.setFontSize(7.5)
   doc.setTextColor(109, 40, 217)
-  doc.text("Live: https://rail-line-695qi0kuh-nikhil-agrahari.vercel.app/   |   GitHub: github.com/agraharinikhil01/RailLine", margin + 2, y)
+  doc.text("Live: https://rail-line-nafa2ii5g-nikhil-agrahari.vercel.app/   |   GitHub: github.com/agraharinikhil01/RailLine", margin + 2, y)
   y += 5.5
 
   // Project 2: CareSync

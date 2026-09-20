@@ -201,7 +201,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                           Comprehensive full-stack railway telemetry platform providing live train status, delay insights, and interactive spatial route maps.
                         </p>
                         <div className="pt-1 flex gap-3 text-xs">
-                          <a href="https://rail-line-695qi0kuh-nikhil-agrahari.vercel.app/" target="_blank" rel="noreferrer" className="text-purple-600 font-semibold hover:underline flex items-center gap-1">
+                          <a href="https://rail-line-nafa2ii5g-nikhil-agrahari.vercel.app/" target="_blank" rel="noreferrer" className="text-purple-600 font-semibold hover:underline flex items-center gap-1">
                             Live Demo <FiExternalLink size={10} />
                           </a>
                           <a href="https://github.com/agraharinikhil01/RailLine" target="_blank" rel="noreferrer" className="text-slate-600 font-semibold hover:underline flex items-center gap-1">
