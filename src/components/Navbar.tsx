@@ -21,30 +21,30 @@ export default function Navbar({ onOpenResume }: NavbarProps) {
   const [mobileOpen, setMobileOpen] = useState(false)
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#0c1017] text-white border-b border-slate-800 transition-colors">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-18 flex items-center justify-between">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#0c1017]/95 backdrop-blur-md text-white border-b border-slate-800 transition-colors">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
         {/* Logo */}
         <ScrollLink to="home" smooth duration={500} className="flex items-center gap-3 cursor-pointer group">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-purple-600 to-amber-400 flex items-center justify-center text-white font-black text-sm shadow-md">
+          <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-purple-600 to-amber-400 flex items-center justify-center text-white font-black text-base shadow-md group-hover:scale-105 transition-transform">
             NA
           </div>
-          <span className="font-bold text-xl tracking-tight text-white group-hover:text-purple-400 transition-colors" style={{ fontFamily: "Space Grotesk, sans-serif" }}>
+          <span className="font-extrabold text-2xl tracking-tight text-white group-hover:text-purple-400 transition-colors" style={{ fontFamily: "Space Grotesk, sans-serif" }}>
             Nikhil
           </span>
         </ScrollLink>
 
-        {/* Center Nav Links */}
-        <nav className="hidden md:flex items-center gap-8">
+        {/* Center Nav Links - Larger & High Contrast */}
+        <nav className="hidden md:flex items-center gap-9">
           {NAV_ITEMS.map((item) => (
             <ScrollLink
               key={item.to}
               to={item.to}
               smooth
               duration={500}
-              offset={-70}
+              offset={-80}
               spy
-              activeClass="text-purple-400 font-semibold"
-              className="text-sm font-medium text-slate-300 hover:text-white cursor-pointer transition-colors"
+              activeClass="text-purple-400 font-bold"
+              className="text-base font-semibold text-slate-200 hover:text-white cursor-pointer transition-colors"
             >
               {item.label}
             </ScrollLink>
@@ -52,16 +52,16 @@ export default function Navbar({ onOpenResume }: NavbarProps) {
         </nav>
 
         {/* Right Action buttons */}
-        <div className="hidden md:flex items-center gap-3">
+        <div className="hidden md:flex items-center gap-3.5">
           {/* Animated Sun / Moon Theme Toggle */}
           <ThemeToggle />
 
           {onOpenResume && (
             <button
               onClick={onOpenResume}
-              className="flex items-center gap-1.5 px-4 py-2 text-xs font-semibold text-slate-300 hover:text-white border border-slate-700 hover:border-slate-500 rounded-full transition-all cursor-pointer"
+              className="flex items-center gap-2 px-5 py-2.5 text-sm font-bold text-slate-200 hover:text-white border border-slate-700 hover:border-slate-500 rounded-full transition-all cursor-pointer hover:bg-slate-800/60"
             >
-              <FiFileText size={13} /> Resume
+              <FiFileText size={15} /> Resume
             </button>
           )}
 
@@ -69,27 +69,27 @@ export default function Navbar({ onOpenResume }: NavbarProps) {
             to="contact"
             smooth
             duration={500}
-            offset={-70}
-            className="px-5 py-2 bg-white text-slate-950 font-bold text-xs rounded-full hover:bg-purple-100 transition-all shadow-md cursor-pointer"
+            offset={-80}
+            className="px-6 py-2.5 bg-white text-slate-950 font-extrabold text-sm rounded-full hover:bg-purple-100 transition-all shadow-md cursor-pointer hover:scale-105"
           >
             Let's Chat
           </ScrollLink>
 
           <RouterLink
             to="/admin"
-            className="p-2 text-slate-400 hover:text-purple-400 transition-colors"
+            className="p-2.5 text-slate-400 hover:text-purple-400 transition-colors"
             title="Admin Portal"
           >
-            <FiLock size={15} />
+            <FiLock size={17} />
           </RouterLink>
         </div>
 
         {/* Mobile menu button & theme toggle */}
-        <div className="flex items-center gap-2 md:hidden">
+        <div className="flex items-center gap-2.5 md:hidden">
           <ThemeToggle />
           {onOpenResume && (
             <button onClick={onOpenResume} className="p-2 text-slate-300">
-              <FiFileText size={18} />
+              <FiFileText size={20} />
             </button>
           )}
           <button
@@ -97,41 +97,41 @@ export default function Navbar({ onOpenResume }: NavbarProps) {
             className="p-2 rounded-lg text-slate-300 hover:text-white"
             aria-label="Toggle menu"
           >
-            {mobileOpen ? <FiX size={22} /> : <FiMenu size={22} />}
+            {mobileOpen ? <FiX size={24} /> : <FiMenu size={24} />}
           </button>
         </div>
       </div>
 
       {/* Mobile Drawer */}
       {mobileOpen && (
-        <div className="md:hidden bg-[#0c1017] border-b border-slate-800 px-4 py-4 space-y-3">
+        <div className="md:hidden bg-[#0c1017] border-b border-slate-800 px-5 py-5 space-y-3.5">
           {NAV_ITEMS.map((item) => (
             <ScrollLink
               key={item.to}
               to={item.to}
               smooth
               duration={500}
-              offset={-70}
+              offset={-80}
               spy
-              activeClass="text-purple-400 font-semibold"
-              className="block py-2 text-sm text-slate-300 hover:text-white cursor-pointer"
+              activeClass="text-purple-400 font-bold"
+              className="block py-2 text-base font-semibold text-slate-200 hover:text-white cursor-pointer"
               onClick={() => setMobileOpen(false)}
             >
               {item.label}
             </ScrollLink>
           ))}
-          <div className="pt-3 border-t border-slate-800 flex items-center justify-between">
+          <div className="pt-4 border-t border-slate-800 flex items-center justify-between">
             <ScrollLink
               to="contact"
               smooth
               duration={500}
-              offset={-70}
+              offset={-80}
               onClick={() => setMobileOpen(false)}
-              className="px-4 py-2 bg-white text-slate-900 font-bold text-xs rounded-full cursor-pointer"
+              className="px-5 py-2.5 bg-white text-slate-900 font-extrabold text-sm rounded-full cursor-pointer"
             >
               Let's Chat
             </ScrollLink>
-            <RouterLink to="/admin" onClick={() => setMobileOpen(false)} className="text-xs text-slate-400">
+            <RouterLink to="/admin" onClick={() => setMobileOpen(false)} className="text-sm text-slate-400 font-medium">
               Admin Login
             </RouterLink>
           </div>

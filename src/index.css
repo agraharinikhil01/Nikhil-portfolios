@@ -9,13 +9,18 @@
 
   html {
     scroll-behavior: smooth;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
   }
 
   body {
-    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    font-family: "Plus Jakarta Sans", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     background-color: #f8fafc;
     color: #0f172a;
     overflow-x: hidden;
+    line-height: 1.6;
     transition: background-color 0.3s ease, color 0.3s ease;
   }
 
@@ -25,19 +30,20 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: "Space Grotesk", sans-serif;
-    letter-spacing: -0.02em;
+    font-family: "Space Grotesk", "Plus Jakarta Sans", sans-serif;
+    letter-spacing: -0.03em;
+    font-weight: 700;
   }
 }
 
 /* Background Subtle Dot Pattern */
 .bg-mesh-pattern {
-  background-image: radial-gradient(rgba(147, 51, 234, 0.09) 1.5px, transparent 1.5px);
-  background-size: 28px 28px;
+  background-image: radial-gradient(rgba(147, 51, 234, 0.10) 1.5px, transparent 1.5px);
+  background-size: 32px 32px;
 }
 
 html.dark .bg-mesh-pattern {
-  background-image: radial-gradient(rgba(168, 85, 247, 0.14) 1.5px, transparent 1.5px);
+  background-image: radial-gradient(rgba(168, 85, 247, 0.16) 1.5px, transparent 1.5px);
 }
 
 /* Dark Mode Overrides for Core Sections */
