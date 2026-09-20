@@ -67,16 +67,16 @@ export default function Skills() {
             {/* Title with Underline */}
             <div>
               <h2
-                className="text-5xl sm:text-6xl font-black tracking-tight text-slate-950 dark:text-white mb-4"
+                className="text-3xl sm:text-4xl lg:text-[42px] font-black tracking-tight text-slate-950 dark:text-white mb-3.5"
                 style={{ fontFamily: "Space Grotesk, sans-serif" }}
               >
                 Skills
               </h2>
-              <div className="w-28 h-1.5 bg-gradient-to-r from-purple-600 via-indigo-600 to-cyan-500 rounded-full"></div>
+              <div className="w-24 h-1.5 bg-gradient-to-r from-purple-600 via-indigo-600 to-cyan-500 rounded-full"></div>
             </div>
 
-            {/* Description paragraphs - Larger & More Realistic */}
-            <div className="space-y-4 text-slate-600 dark:text-slate-300 text-base sm:text-lg leading-relaxed max-w-lg">
+            {/* Description paragraphs - Clean & Legible */}
+            <div className="space-y-3.5 text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed max-w-lg">
               <p>
                 My engineering approach combines rigorous algorithmic discipline with modern full-stack web development. Proficient in crafting responsive frontend experiences, high-throughput backend APIs, and distributed database systems.
               </p>
@@ -170,22 +170,22 @@ export default function Skills() {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.4 }}
-              className="space-y-6"
+              className="space-y-5"
             >
-              <h3 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white" style={{ fontFamily: "Space Grotesk, sans-serif" }}>
+              <h3 className="text-xl sm:text-2xl font-extrabold text-slate-900 dark:text-white" style={{ fontFamily: "Space Grotesk, sans-serif" }}>
                 {SKILL_GROUPS[activeGroupIndex].category}
               </h3>
 
-              <div className="space-y-5">
+              <div className="space-y-4">
                 {SKILL_GROUPS[activeGroupIndex].skills.map((skill, index) => (
-                  <div key={skill.name} className="space-y-2">
+                  <div key={skill.name} className="space-y-1.5">
                     <div className="flex justify-between items-center">
-                      <span className="font-bold text-slate-900 dark:text-slate-100 text-base sm:text-lg">{skill.name}</span>
-                      <span className="text-sm sm:text-base font-mono font-extrabold text-purple-600 dark:text-purple-400">{skill.percentage}%</span>
+                      <span className="font-bold text-slate-900 dark:text-slate-100 text-sm sm:text-base">{skill.name}</span>
+                      <span className="text-xs sm:text-sm font-mono font-extrabold text-purple-600 dark:text-purple-400">{skill.percentage}%</span>
                     </div>
 
-                    {/* Progress Bar - Thicker, Clearer, Animated */}
-                    <div className="h-3 w-full bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden border border-slate-200/50 dark:border-slate-700">
+                    {/* Progress Bar - Refined & Animated */}
+                    <div className="h-2.5 w-full bg-slate-100 dark:bg-slate-800 rounded-full overflow-hidden border border-slate-200/50 dark:border-slate-700">
                       <motion.div
                         initial={{ width: 0 }}
                         whileInView={{ width: `${skill.percentage}%` }}
@@ -200,13 +200,13 @@ export default function Skills() {
             </motion.div>
 
             {/* Quick Overview Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-slate-100 dark:border-slate-800 text-sm text-slate-600 dark:text-slate-300">
-              <div className="p-5 rounded-2xl bg-purple-50/60 dark:bg-purple-950/40 border border-purple-100 dark:border-purple-800">
-                <span className="text-purple-700 dark:text-purple-400 font-extrabold block text-base mb-1">Algorithmic Problem Solving</span>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-slate-100 dark:border-slate-800 text-xs sm:text-sm text-slate-600 dark:text-slate-300">
+              <div className="p-4 sm:p-5 rounded-2xl bg-purple-50/60 dark:bg-purple-950/40 border border-purple-100 dark:border-purple-800">
+                <span className="text-purple-700 dark:text-purple-400 font-extrabold block text-sm sm:text-base mb-1">Algorithmic Problem Solving</span>
                 <span>Active practice on LeetCode with emphasis on Graphs, DP, Trees, and Array manipulation.</span>
               </div>
-              <div className="p-5 rounded-2xl bg-indigo-50/60 dark:bg-indigo-950/40 border border-indigo-100 dark:border-indigo-800">
-                <span className="text-indigo-700 dark:text-indigo-400 font-extrabold block text-base mb-1">Production Readiness</span>
+              <div className="p-4 sm:p-5 rounded-2xl bg-indigo-50/60 dark:bg-indigo-950/40 border border-indigo-100 dark:border-indigo-800">
+                <span className="text-indigo-700 dark:text-indigo-400 font-extrabold block text-sm sm:text-base mb-1">Production Readiness</span>
                 <span>End-to-end deployments on Vercel with responsive cross-device optimization and clean codebases.</span>
               </div>
             </div>

@@ -80,60 +80,60 @@ export default function Contact() {
     <section id="contact" className="py-28 bg-white dark:bg-[#0c1427] relative border-t border-slate-200 dark:border-slate-800 transition-colors duration-300">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-20">
-          <span className="text-sm font-bold uppercase tracking-widest text-purple-600 dark:text-purple-400 bg-purple-50 dark:bg-purple-950/60 px-4 py-1.5 rounded-full border border-purple-200/80 dark:border-purple-800">
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <span className="text-xs font-bold uppercase tracking-widest text-purple-600 dark:text-purple-400 bg-purple-50 dark:bg-purple-950/60 px-3.5 py-1.5 rounded-full border border-purple-200/80 dark:border-purple-800">
             Get In Touch
           </span>
-          <h2 className="text-4xl sm:text-5xl font-black text-slate-900 dark:text-white mt-4 tracking-tight" style={{ fontFamily: "Space Grotesk, sans-serif" }}>
+          <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-black text-slate-900 dark:text-white mt-3.5 tracking-tight" style={{ fontFamily: "Space Grotesk, sans-serif" }}>
             Let's Collaborate & Build Together
           </h2>
-          <p className="text-slate-600 dark:text-slate-300 text-base sm:text-lg mt-4 leading-relaxed font-normal">
+          <p className="text-slate-600 dark:text-slate-300 text-sm sm:text-base mt-3 leading-relaxed font-normal">
             Have an opportunity, project, or question? Send a message and it will be recorded directly in my inbox and database.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
           {/* Left info cards (5 cols) */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="lg:col-span-5 flex flex-col gap-5"
+            className="lg:col-span-5 flex flex-col gap-4"
           >
-            <div className="p-7 rounded-3xl bg-gradient-to-br from-purple-50 to-indigo-50 dark:from-[#111c35] dark:to-[#172545] border border-purple-100 dark:border-purple-800/60 flex items-start gap-5 shadow-sm">
-              <div className="p-4 bg-purple-600 text-white rounded-2xl shadow-md shadow-purple-400/40">
-                <FiMail size={24} />
+            <div className="p-6 rounded-3xl bg-gradient-to-br from-purple-50 to-indigo-50 dark:from-[#111c35] dark:to-[#172545] border border-purple-100 dark:border-purple-800/60 flex items-start gap-4 shadow-sm">
+              <div className="p-3.5 bg-purple-600 text-white rounded-2xl shadow-md shadow-purple-400/40">
+                <FiMail size={22} />
               </div>
               <div>
-                <h4 className="text-base sm:text-lg font-extrabold text-slate-900 dark:text-white">Email Me Directly</h4>
-                <a href="mailto:agraharinikhill999@gmail.com" className="text-sm sm:text-base font-bold text-purple-700 dark:text-purple-400 hover:underline block mt-1">
+                <h4 className="text-base font-bold text-slate-900 dark:text-white">Email Me Directly</h4>
+                <a href="mailto:agraharinikhill999@gmail.com" className="text-sm font-bold text-purple-700 dark:text-purple-400 hover:underline block mt-0.5">
                   agraharinikhill999@gmail.com
                 </a>
                 <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">Response within 24 hours</span>
               </div>
             </div>
 
-            <div className="p-7 rounded-3xl bg-slate-50 dark:bg-[#111c35] border border-slate-200/80 dark:border-slate-700/60 flex items-start gap-5 shadow-sm">
-              <div className="p-4 bg-indigo-600 text-white rounded-2xl shadow-md shadow-indigo-400/40">
-                <FiPhone size={24} />
+            <div className="p-6 rounded-3xl bg-slate-50 dark:bg-[#111c35] border border-slate-200/80 dark:border-slate-700/60 flex items-start gap-4 shadow-sm">
+              <div className="p-3.5 bg-indigo-600 text-white rounded-2xl shadow-md shadow-indigo-400/40">
+                <FiPhone size={22} />
               </div>
               <div>
-                <h4 className="text-base sm:text-lg font-extrabold text-slate-900 dark:text-white">Direct Call / WhatsApp</h4>
-                <a href="tel:+918528930905" className="text-sm sm:text-base font-bold text-indigo-700 dark:text-indigo-400 hover:underline block mt-1">
+                <h4 className="text-base font-bold text-slate-900 dark:text-white">Direct Call / WhatsApp</h4>
+                <a href="tel:+918528930905" className="text-sm font-bold text-indigo-700 dark:text-indigo-400 hover:underline block mt-0.5">
                   +91 8528930905
                 </a>
                 <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">Available Mon - Sat, 9am - 8pm IST</span>
               </div>
             </div>
 
-            <div className="p-7 rounded-3xl bg-slate-50 dark:bg-[#111c35] border border-slate-200/80 dark:border-slate-700/60 flex items-start gap-5 shadow-sm">
-              <div className="p-4 bg-cyan-600 text-white rounded-2xl shadow-md shadow-cyan-400/40">
-                <FiMapPin size={24} />
+            <div className="p-6 rounded-3xl bg-slate-50 dark:bg-[#111c35] border border-slate-200/80 dark:border-slate-700/60 flex items-start gap-4 shadow-sm">
+              <div className="p-3.5 bg-cyan-600 text-white rounded-2xl shadow-md shadow-cyan-400/40">
+                <FiMapPin size={22} />
               </div>
               <div>
-                <h4 className="text-base sm:text-lg font-extrabold text-slate-900 dark:text-white">Location</h4>
-                <p className="text-sm sm:text-base font-bold text-slate-800 dark:text-slate-200 mt-1">Greater Noida, Uttar Pradesh, India</p>
+                <h4 className="text-base font-bold text-slate-900 dark:text-white">Location</h4>
+                <p className="text-sm font-bold text-slate-800 dark:text-slate-200 mt-0.5">Greater Noida, Uttar Pradesh, India</p>
                 <span className="text-xs text-slate-500 dark:text-slate-400 font-medium">Open to On-site, Hybrid & Remote Roles</span>
               </div>
             </div>
@@ -147,10 +147,10 @@ export default function Contact() {
             transition={{ duration: 0.6 }}
             className="lg:col-span-7 bg-white dark:bg-[#111c35] p-8 sm:p-10 rounded-3xl border border-slate-200/80 dark:border-slate-700/60 shadow-xl shadow-purple-500/5"
           >
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <form onSubmit={handleSubmit} className="space-y-5">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-sm font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-2">
+                  <label className="block text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-2">
                     Your Name
                   </label>
                   <input
@@ -160,11 +160,11 @@ export default function Contact() {
                     value={formData.name}
                     onChange={handleChange}
                     placeholder="e.g. John Doe"
-                    className="w-full px-5 py-3.5 bg-slate-50 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-700 rounded-2xl text-base text-slate-900 dark:text-white focus:outline-none focus:border-purple-500 focus:bg-white dark:focus:bg-slate-900 transition-colors"
+                    className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-700 rounded-2xl text-sm sm:text-base text-slate-900 dark:text-white focus:outline-none focus:border-purple-500 focus:bg-white dark:focus:bg-slate-900 transition-colors"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-2">
+                  <label className="block text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-2">
                     Email Address
                   </label>
                   <input
@@ -174,13 +174,13 @@ export default function Contact() {
                     value={formData.email}
                     onChange={handleChange}
                     placeholder="e.g. john@example.com"
-                    className="w-full px-5 py-3.5 bg-slate-50 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-700 rounded-2xl text-base text-slate-900 dark:text-white focus:outline-none focus:border-purple-500 focus:bg-white dark:focus:bg-slate-900 transition-colors"
+                    className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-700 rounded-2xl text-sm sm:text-base text-slate-900 dark:text-white focus:outline-none focus:border-purple-500 focus:bg-white dark:focus:bg-slate-900 transition-colors"
                   />
                 </div>
               </div>
 
               <div>
-                <label className="block text-sm font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-2">
+                <label className="block text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-2">
                   Subject / Topic
                 </label>
                 <input
@@ -189,12 +189,12 @@ export default function Contact() {
                   value={formData.subject}
                   onChange={handleChange}
                   placeholder="e.g. Project Inquiry / SDE Opportunity"
-                  className="w-full px-5 py-3.5 bg-slate-50 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-700 rounded-2xl text-base text-slate-900 dark:text-white focus:outline-none focus:border-purple-500 focus:bg-white dark:focus:bg-slate-900 transition-colors"
+                  className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-700 rounded-2xl text-sm sm:text-base text-slate-900 dark:text-white focus:outline-none focus:border-purple-500 focus:bg-white dark:focus:bg-slate-900 transition-colors"
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-2">
+                <label className="block text-xs sm:text-sm font-bold uppercase tracking-wider text-slate-700 dark:text-slate-300 mb-2">
                   Message Details
                 </label>
                 <textarea
@@ -204,7 +204,7 @@ export default function Contact() {
                   value={formData.message}
                   onChange={handleChange}
                   placeholder="Write your message here..."
-                  className="w-full px-5 py-3.5 bg-slate-50 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-700 rounded-2xl text-base text-slate-900 dark:text-white focus:outline-none focus:border-purple-500 focus:bg-white dark:focus:bg-slate-900 transition-colors resize-none"
+                  className="w-full px-4 py-3 bg-slate-50 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-700 rounded-2xl text-sm sm:text-base text-slate-900 dark:text-white focus:outline-none focus:border-purple-500 focus:bg-white dark:focus:bg-slate-900 transition-colors resize-none"
                 />
               </div>
 
@@ -223,23 +223,23 @@ export default function Contact() {
                 </div>
               )}
 
-              <div className="flex flex-col sm:flex-row gap-4 pt-2">
+              <div className="flex flex-col sm:flex-row gap-3.5 pt-2">
                 <button
                   type="submit"
                   disabled={loading}
-                  className="flex-1 py-4 px-7 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white font-black text-base sm:text-lg rounded-2xl shadow-xl shadow-purple-400/40 dark:shadow-purple-900/40 transition-all flex items-center justify-center gap-2.5 cursor-pointer hover:-translate-y-0.5"
+                  className="flex-1 py-3 px-6 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white font-bold text-sm sm:text-base rounded-2xl shadow-lg shadow-purple-400/30 dark:shadow-purple-900/40 transition-all flex items-center justify-center gap-2 cursor-pointer hover:-translate-y-0.5"
                 >
-                  <FiSend size={18} />
+                  <FiSend size={16} />
                   {loading ? "Sending..." : "Send Direct Message"}
                 </button>
 
                 <button
                   type="button"
                   onClick={handleDirectMail}
-                  className="py-4 px-6 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 font-extrabold text-sm sm:text-base rounded-2xl transition-all flex items-center justify-center gap-2 cursor-pointer"
+                  className="py-3 px-5 bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 font-bold text-xs sm:text-sm rounded-2xl transition-all flex items-center justify-center gap-2 cursor-pointer"
                   title="Open directly in your default email client"
                 >
-                  <FiExternalLink size={16} /> Open in Mail App
+                  <FiExternalLink size={15} /> Open in Mail App
                 </button>
               </div>
             </form>
