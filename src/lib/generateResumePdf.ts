@@ -144,7 +144,7 @@ export function generateResumePdf() {
   doc.setFont("helvetica", "normal")
   doc.setFontSize(7.5)
   doc.setTextColor(109, 40, 217)
-  doc.text("Live: https://care-sync-3o8iuykgu-nikhil-agrahari.vercel.app/login   |   GitHub: github.com/agraharinikhil01/CareSync-", margin + 2, y)
+  doc.text("Live: https://care-sync-ea36i7r40-nikhil-agrahari.vercel.app/   |   GitHub: github.com/agraharinikhil01/CareSync-", margin + 2, y)
   y += 5.5
 
   // Project 3: HR Agent

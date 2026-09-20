@@ -219,7 +219,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                           Full-stack hospital platform with role-based access, Emergency QR Health Passport, QR payments, and AI prescription scribe.
                         </p>
                         <div className="pt-1 flex gap-3 text-xs">
-                          <a href="https://care-sync-3o8iuykgu-nikhil-agrahari.vercel.app/login" target="_blank" rel="noreferrer" className="text-purple-600 font-semibold hover:underline flex items-center gap-1">
+                          <a href="https://care-sync-ea36i7r40-nikhil-agrahari.vercel.app/" target="_blank" rel="noreferrer" className="text-purple-600 font-semibold hover:underline flex items-center gap-1">
                             Live Demo <FiExternalLink size={10} />
                           </a>
                           <a href="https://github.com/agraharinikhil01/CareSync-" target="_blank" rel="noreferrer" className="text-slate-600 font-semibold hover:underline flex items-center gap-1">

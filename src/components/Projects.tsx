@@ -21,7 +21,7 @@ const DEFAULT_PROJECTS: Project[] = [
     description:
       "Full-stack Hospital Management System incorporating role-based access control to ensure secure, structured workflows. Features Emergency QR Health Passport, QR payments, and an AI prescription scribe to streamline patient care.",
     tech_stack: ["React", "Node.js", "Express", "MongoDB", "AI Medical Assistant"],
-    live_url: "https://care-sync-3o8iuykgu-nikhil-agrahari.vercel.app/login",
+    live_url: "https://care-sync-ea36i7r40-nikhil-agrahari.vercel.app/",
     github_url: "https://github.com/agraharinikhil01/CareSync-",
     order_index: 2,
     created_at: "",
