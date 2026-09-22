@@ -10,7 +10,7 @@ const DEFAULT_PROJECTS: Project[] = [
     description:
       "Comprehensive full-stack railway tracking platform providing live train status, accurate ETA, delay insights, and weather-based travel information. Integrated interactive route maps and journey analytics utilizing MapLibre/MapTiler and REST APIs.",
     tech_stack: ["React", "TypeScript", "Node.js", "MapLibre", "Supabase", "REST APIs"],
-    live_url: "https://rail-line-nafa2ii5g-nikhil-agrahari.vercel.app/",
+    live_url: "https://rail-line-klvoma335-nikhil-agrahari.vercel.app/",
     github_url: "https://github.com/agraharinikhil01/RailLine",
     order_index: 1,
     created_at: "",
