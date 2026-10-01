@@ -113,7 +113,7 @@ export function generateResumePdf() {
   doc.setFont("helvetica", "normal")
   doc.setFontSize(7.5)
   doc.setTextColor(109, 40, 217)
-  doc.text("Live: https://rail-line-i7pas0lmq-nikhil-agrahari.vercel.app/   |   GitHub: github.com/agraharinikhil01/RailLine", margin + 2, y)
+  doc.text("Live: https://rail-line-api-ten.vercel.app?_vercel_share=XDCcUFRA9rQs0rRqrDM8bNn8fdkeUN7f   |   GitHub: github.com/agraharinikhil01/RailLine", margin + 2, y)
   y += 5.5
 
   // Project 2: CareSync
@@ -144,7 +144,7 @@ export function generateResumePdf() {
   doc.setFont("helvetica", "normal")
   doc.setFontSize(7.5)
   doc.setTextColor(109, 40, 217)
-  doc.text("Live: https://care-sync-ea36i7r40-nikhil-agrahari.vercel.app/   |   GitHub: github.com/agraharinikhil01/CareSync-", margin + 2, y)
+  doc.text("Live: https://care-sync-azure-seven.vercel.app?_vercel_share=xZa99U1FiK6zCT4x5QH8ocCdk7k3scA1   |   GitHub: github.com/agraharinikhil01/CareSync-", margin + 2, y)
   y += 5.5
 
   // Project 3: HR Agent
@@ -173,7 +173,7 @@ export function generateResumePdf() {
   doc.setFont("helvetica", "normal")
   doc.setFontSize(7.5)
   doc.setTextColor(109, 40, 217)
-  doc.text("Live: https://hr-agent-steel.vercel.app/login", margin + 2, y)
+  doc.text("Live: https://hr-agent-steel.vercel.app?_vercel_share=VYIjclQfJsO1B1UsCMnJxovzrjMnigBD", margin + 2, y)
   y += 5.5
 
   // CERTIFICATIONS

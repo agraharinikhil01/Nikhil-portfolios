@@ -10,7 +10,7 @@ const DEFAULT_PROJECTS: Project[] = [
     description:
       "Comprehensive full-stack railway tracking platform providing live train status, accurate ETA, delay insights, and weather-based travel information. Integrated interactive route maps and journey analytics utilizing MapLibre/MapTiler and REST APIs.",
     tech_stack: ["React", "TypeScript", "Node.js", "MapLibre", "Supabase", "REST APIs"],
-    live_url: "https://rail-line-i7pas0lmq-nikhil-agrahari.vercel.app/",
+    live_url: "https://rail-line-api-ten.vercel.app?_vercel_share=XDCcUFRA9rQs0rRqrDM8bNn8fdkeUN7f",
     github_url: "https://github.com/agraharinikhil01/RailLine",
     order_index: 1,
     created_at: "",
@@ -21,7 +21,7 @@ const DEFAULT_PROJECTS: Project[] = [
     description:
       "Full-stack Hospital Management System incorporating role-based access control to ensure secure, structured workflows. Features Emergency QR Health Passport, QR payments, and an AI prescription scribe to streamline patient care.",
     tech_stack: ["React", "Node.js", "Express", "MongoDB", "AI Medical Assistant"],
-    live_url: "https://care-sync-ea36i7r40-nikhil-agrahari.vercel.app/",
+    live_url: "https://care-sync-azure-seven.vercel.app?_vercel_share=xZa99U1FiK6zCT4x5QH8ocCdk7k3scA1",
     github_url: "https://github.com/agraharinikhil01/CareSync-",
     order_index: 2,
     created_at: "",
@@ -32,7 +32,7 @@ const DEFAULT_PROJECTS: Project[] = [
     description:
       "AI-powered HR Agent built for intelligent hiring workflows, automated candidate screening, and streamlined interview pipelines with a modern responsive analytics dashboard.",
     tech_stack: ["React", "Node.js", "AI", "TypeScript", "Tailwind CSS"],
-    live_url: "https://hr-agent-steel.vercel.app/login",
+    live_url: "https://hr-agent-steel.vercel.app?_vercel_share=VYIjclQfJsO1B1UsCMnJxovzrjMnigBD",
     github_url: "",
     order_index: 3,
     created_at: "",

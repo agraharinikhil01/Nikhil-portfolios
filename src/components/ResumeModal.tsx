@@ -201,7 +201,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                           Comprehensive full-stack railway telemetry platform providing live train status, delay insights, and interactive spatial route maps.
                         </p>
                         <div className="pt-1 flex gap-3 text-xs">
-                          <a href="https://rail-line-i7pas0lmq-nikhil-agrahari.vercel.app/" target="_blank" rel="noreferrer" className="text-purple-600 font-semibold hover:underline flex items-center gap-1">
+                          <a href="https://rail-line-api-ten.vercel.app?_vercel_share=XDCcUFRA9rQs0rRqrDM8bNn8fdkeUN7f" target="_blank" rel="noreferrer" className="text-purple-600 font-semibold hover:underline flex items-center gap-1">
                             Live Demo <FiExternalLink size={10} />
                           </a>
                           <a href="https://github.com/agraharinikhil01/RailLine" target="_blank" rel="noreferrer" className="text-slate-600 font-semibold hover:underline flex items-center gap-1">
@@ -219,7 +219,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                           Full-stack hospital platform with role-based access, Emergency QR Health Passport, QR payments, and AI prescription scribe.
                         </p>
                         <div className="pt-1 flex gap-3 text-xs">
-                          <a href="https://care-sync-ea36i7r40-nikhil-agrahari.vercel.app/" target="_blank" rel="noreferrer" className="text-purple-600 font-semibold hover:underline flex items-center gap-1">
+                          <a href="https://care-sync-azure-seven.vercel.app?_vercel_share=xZa99U1FiK6zCT4x5QH8ocCdk7k3scA1" target="_blank" rel="noreferrer" className="text-purple-600 font-semibold hover:underline flex items-center gap-1">
                             Live Demo <FiExternalLink size={10} />
                           </a>
                           <a href="https://github.com/agraharinikhil01/CareSync-" target="_blank" rel="noreferrer" className="text-slate-600 font-semibold hover:underline flex items-center gap-1">
@@ -237,7 +237,7 @@ export default function ResumeModal({ isOpen, onClose }: ResumeModalProps) {
                           AI-driven recruitment agent automating candidate screening, resume parsing, and interview workflow coordination.
                         </p>
                         <div className="pt-1 flex gap-3 text-xs">
-                          <a href="https://hr-agent-steel.vercel.app/login" target="_blank" rel="noreferrer" className="text-purple-600 font-semibold hover:underline flex items-center gap-1">
+                          <a href="https://hr-agent-steel.vercel.app?_vercel_share=VYIjclQfJsO1B1UsCMnJxovzrjMnigBD" target="_blank" rel="noreferrer" className="text-purple-600 font-semibold hover:underline flex items-center gap-1">
                             Live Demo <FiExternalLink size={10} />
                           </a>
                         </div>
